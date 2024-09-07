@@ -1,0 +1,41 @@
+{% include "header.html" %}
+
+<div class="" style="background-image: url('{{cafe.img_url}}')" id="cafe_name">
+    <div class="container  py-5 my-5 text-left position-relative col-md-10 col-lg-8 col-xl-7">
+            <h1 class="cafe_name py-5 my-5" >{{cafe.name}}</h1>
+    </div>
+</div>
+
+<div class="container px-4 py-5 my-5 text-center position-relative col-md-10 col-lg-8 col-xl-7">
+    <h2>Work from <em>{{cafe.name}}</em> while you enjoy the comfy and taste of good coffee!</h2>
+    <div class="d-grid gap-2 px-3 pt-4 d-sm-flex justify-content-sm-center">
+        <a href="{{url_for('join')}}">
+        <button type="button" class="btn btn-success pt-3 pb-3 btn-lg px-4 gap-3" fdprocessedid="8faay6">JOIN COMMUNITY</button>
+        </a>
+        <a href="{{url_for('places')}}">
+        <button type="button" class=" btn-outline-secondary pt-3 pb-3 btn-lg px-4" fdprocessedid="8faay6">EXPLORE MORE CAFES</button>
+        </a>
+    </div>
+    <div class="link map pt-4">
+    <a href="{{cafe.map_url}}" target="_blank"><i class="fa-solid fa-location-dot"></i> VIEW LOCATION ON GOOGLE MAP</a>
+    </div>
+</div>
+
+
+
+<!--<div class="container px-4 py-5 my-5 text-center">-->
+<!--    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
+<!--    <h2>Work from <em>{{cafe.name}}</em> while you enjoy the comfy and taste of good coffee!</h2>-->
+<!--    <div class="col-lg-6 mx-auto">-->
+<!--      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>-->
+<!--      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">-->
+<!--        <button type="button" class="btn btn-primary btn-lg px-4 gap-3" fdprocessedid="8faay6">Primary button</button>-->
+<!--        <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="h31y8q">Secondary</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+
+
+{% include "footer.html" %}

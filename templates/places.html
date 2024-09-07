@@ -1,0 +1,104 @@
+{% include "header.html" %}
+
+
+<div class="masthead" style="background-image: url('../static/assets/img/lon4.jpg')" >
+    <div class="container px-4 py-5 sm-pb-5 my-5 text-center position-relative col-md-10 col-lg-8 col-xl-7">
+            <h1 class=" align-items-center justify-content-center">WORK FROM ANYWHERE AROUND LONDON</h1>
+            <p>The best cafes, restaurants, libraries,
+        and hotel lobbies to work from in London. Expand your coworking
+        map with our list of casual spots with free and reliable Wi-Fi, ample
+        power sockets, and comfy seating areas!</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="container pt-3 justify-content-center">
+        <h2>{{num_cafes}} PLACES TO WORK FROM</h2>
+    </div>
+
+    {% for cafe in cafes %}
+<div class="link">
+<a href="{{url_for('show_cafe', cafe_id=cafe.id)}}">
+    <div class="container list">
+
+          <div class="d-flex flex-column flex-md-row gap-4 py-sm-5 py-md-5 align-items-center justify-content-center">
+
+              <div class=" container">
+                <img class="hotel_img " src="{{cafe.img_url}} ">
+              </div>
+
+            <div class="container">
+                <h4 class="pb-3">
+                     <i class="fa fa-solid fa-laptop"></i>
+                  {{ cafe.name }}
+                </h4>
+                <p><i class="fa-solid fa-mug-hot"></i> Coffee Price: {{cafe.coffee_price}}</p>
+
+                <p>
+                      <i class="fa-icon fa-solid fa-location-arrow "></i>
+                  {{ cafe.location }}
+                </p>
+                <div class=" d-flex flex-row ">
+                    <div class="icons px-4 ">
+                        {% if cafe.has_wifi == 1 %}
+                        <i class="fa-solid fa-wifi"></i>
+                        <br>
+                        <span title="Stable Wifi">Wi-Fi</span>
+                        {% else %}
+                        <i class="fa-solid fa-plane-up"></i>
+                        <br>
+                        <span title="Stable Wifi">No Wi-Fi</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="icons px-4 ">
+                        {% if cafe.can_take_calls == 1 %}
+                        <i class="fa-solid fa-phone"></i>
+                        <br>
+                        <span title="Can Take Calls">Calls</span>
+                        {% else %}
+                        <i class="fa-solid fa-phone-slash"></i>
+                        <br>
+                        <span title="Can Take Calls">No Calls</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="icons px-4 ">
+                        {% if cafe.has_toilet == 1 %}
+                        <i class="fa-solid fa-restroom"></i>
+                        <br>
+                        <span title="Has Toilet">Toilet</span>
+                        {% else %}
+                        <i class="fa-solid fa-toilet-paper-slash"></i>
+                        <br>
+                        <span title="Has Toilet">No Toilet</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="icons px-4">
+                        {% if cafe.has_sockets == 1 %}
+                        <i class="fa-solid fa-plug"></i>
+                        <br>
+                        <span title="Has Sockets">Socket</span>
+                        {% else %}
+                        <i class="fa-solid fa-plug-circle-xmark"></i>
+                        <br>
+                        <span title="Has Sockets">No Socket</span>
+                        {% endif %}
+                    </div>
+
+
+                </div>
+
+            </div>
+
+          </div>
+
+    </div>
+    </a>
+</div>
+</div>
+{% endfor %}
+
+{% include "footer.html" %}

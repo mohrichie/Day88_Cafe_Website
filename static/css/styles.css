@@ -1,0 +1,212 @@
+h1, H2, H3, H4, H5, H6{
+    font-family: "Lora", sans-serif;
+    font-weight: bold;
+}
+p, span, btn, a{
+    font-family: "Open+Sans", serif;
+}
+
+
+.btn{
+    background-color: #0D7C66;
+    border: none
+
+}
+
+.btn:hover{
+    background-color: #41B3A2;
+
+}
+
+
+.hotel_img{
+    width: 80%;
+    height: auto
+}
+
+.link a:hover {
+
+  color: #41B3A2;
+
+}
+
+.link a {
+  color: black;
+
+}
+
+#cafe_name{
+    position: relative;
+  margin-bottom: 3rem;
+  padding-top: calc(8rem + 57px);
+  padding-bottom: 8rem;
+  background: no-repeat center center;
+  background-color: #6c757d;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 500px;
+  width: 100%;
+    color: white;
+
+
+
+}
+
+.cafe_name{
+    font-size: 3rem;
+  font-weight: 650;
+   text-transform: uppercase;
+}
+
+/* Flash Message Styling */
+.flash {
+  color: #ee6f57;
+  text-align: center;
+}
+
+h {text-align: center;}
+
+header.masthead h1 {
+
+}
+
+.subheading{
+    font-size: 1.5rem;
+    font-weight: 5rem
+}
+
+.masthead{
+    position: relative;
+  margin-bottom: 3rem;
+  padding-top: calc(8rem + 57px);
+  padding-bottom: 8rem;
+  background: no-repeat center center;
+  background-color: #6c757d;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 500px;
+  width: 100%;
+    color: white;
+  text-align: center;
+
+}
+
+#featured-3{
+    text-align: center;
+}
+
+
+#work{
+    text-align: center;
+}
+
+
+.fa-{
+    font-size: 0.9em;
+     position: relative;
+     top: 9px;
+
+
+}
+
+.fa-stack{
+    font-size: 3em;
+     position: relative;
+     top: 9px;
+
+
+}
+
+.fa-icon {
+    border-radius: 10%;
+    overflow: hidden;
+    border: 3px solid blue;
+    font-size: 3rem;
+    width: 30px;
+    height: 30px;
+    color: #0D7C66;
+
+}
+
+
+.navbar{
+background-color: black;
+
+}
+
+#mainNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #fff;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#mainNav .navbar-brand {
+  font-weight: 800;
+}
+#mainNav .navbar-toggler {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.75rem;
+  text-transform: uppercase;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: #fff;
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+@media (min-width: 992px) {
+  #mainNav {
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -83px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+}

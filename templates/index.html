@@ -1,0 +1,66 @@
+{% include "header.html" %}
+
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/lon.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>WORK FROM ANYWHERE AROUND LONDON</h1>
+          <span class="subheading">From coffee shops to hotel lobbies, discover everyday places to work and connect..</span>
+          <div class="d-grid gap-2 pt-5 d-sm-flex justify-content-sm-center">
+                <a href="{{url_for('places')}}">
+                    <button type="button" class="btn btn-success pt-3 pb-3 btn-lg px-4 gap-3 " fdprocessedid="jiih">EXPLORE PLACES</button>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container px-4 py-5" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis">STAY PRODUCTIVE</h3>
+        <p>Explore venues with reliable Wi-Fi, ample power sockets, and comfy seating areas.</p>
+      </div>
+      <div class="feature col">
+        <h3 class="fs-2 text-body-emphasis">FEEL WELCOME</h3>
+        <p>Discover the best times to work, based on community data.</p>
+
+      </div>
+      <div class="feature col  text-align-center">
+        <h3 class="fs-2 text-body-emphasis">STAY INSPIRED</h3>
+        <p>Co-Work friends and colleagues while you uncover new places with ambiance and friendly vibes. </p>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+<hr>
+  <div class="container position-relative py-5 px-4 px-lg-5" id="work">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h2>GET TO WORK</h2>
+          <span class="subheading">From coffee shops to hotel lobbies, discover everyday places to work and connect..</span>
+          <div class="d-grid gap-2 pt-5 d-sm-flex justify-content-sm-center">
+                <a href="{{url_for('places')}}">
+                    <button type="button" class="btn btn-success pt-3 pb-3 btn-lg px-4 gap-3 " fdprocessedid="jiih">EXPLORE PLACES</button>
+                </a>
+          </div>
+          <div class="link d-grid gap-2 pt-3 d-sm-flex justify-content-sm-center">
+                <a href="{{url_for('join')}}">
+                  JOIN TO SUGGEST A VENUE
+                </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% include "footer.html" %}
