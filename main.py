@@ -13,7 +13,6 @@ import os
 datetime = datetime
 
 app = Flask(__name__)
-# TopSecretAPIKey = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 app.config['SECRET_KEY'] = os.environ.get("FlaskConfigKey", "dev")
 
 Bootstrap5(app)
